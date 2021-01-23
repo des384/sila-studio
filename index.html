@@ -6,7 +6,8 @@
     <title>Веб-студия SILA</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/normalize.css">    
+<link rel="stylesheet" href="css/jquery.fancybox.min.css"> 
+<link rel="stylesheet" href="css/normalize.css">   
 <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -98,7 +99,7 @@
           </div> 
         </div>
       <div class="footer__col2">
-    <a href="#" class="footer__btn">Оставить заявку</a>
+    <a class="footer__btn" data-fancybox data-src="#modal" href="javascript:;">Оставить заявку</a>
     <div class="footer__social-inner">
       <img src="images/ig.svg" alt="instagram">
       <img src="images/fb.svg" alt="facebook"> 
@@ -109,7 +110,45 @@
  </div>   
 </footer>
 
+<div id="modal">
+ <h2 class="modal__title">
+    Оставьте заявку на нужную услугу
+ </h2>
+ <p class="modal__desc">или позвоните нам и мы поможем вам определиться: <span>8 495 666-666</span> </p>   
 
+<h3 class="modal__title--service">Услуга</h3>
+<div class="modal__btn-inner">
+<button class="modal__btn">SEO</button>
+<button class="modal__btn">Дизайн</button>
+<button class="modal__btn">Веб-разработка</button>
+<button class="modal__btn">Контекстная реклама</button>
+<button class="modal__btn">Поддержка</button>
+</div>
+<h3 class="modal__price--title">Стоимость</h3>
+<div class="modal__ranger--inner">
+    <input type="text" class="js-range-slider" name="my_range" value="" />  
+</div>
+<div class="modal__form">
+  <h3 class="modal__form--title">Контактные данные</h3>  
+<form action="">
+ <div class="contact__form">
+    <div class="contact__form--row-1">
+    <input class="input__form"  type="text" placeholder="Ваше имя">
+    <label class="name__label">Укажите ваше имя</label>
+    </div>
+    <div class="contact__form--row-2">
+    <input class="input__form" type="text" placeholder="Телефон">    
+    <label class="name__label">Укажите контактный телефон</label>
+</div>       
+ </div>
+ <button class="form__btn" type="submit">Отправить заявку</button>
+
+</form>
+</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 <script src="js/main.min.js"></script>    
 </body>
 </html>
