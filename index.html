@@ -6,7 +6,9 @@
     <title>Веб-студия SILA</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/jquery.fancybox.min.css"> 
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<!-- <link rel="stylesheet" href="css/ion.rangeSlider.min.css">  -->
+<link rel="stylesheet" href="css/nouislider.min.css">
 <link rel="stylesheet" href="css/normalize.css">   
 <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -125,9 +127,9 @@
 <button class="modal__btn">Поддержка</button>
 </div>
 <h3 class="modal__price--title">Стоимость</h3>
-<div class="modal__ranger--inner">
-    <input type="text" class="js-range-slider" name="my_range" value="" />  
-</div>
+
+<div id="slider"></div>
+
 <div class="modal__form">
   <h3 class="modal__form--title">Контактные данные</h3>  
 <form action="">
@@ -146,9 +148,10 @@
 </form>
 </div>
 </div>
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
+<script src="js/nouislider.min.js"></script>
+<!-- <script src="js/ion.rangeSlider.min.js"></script> -->
 <script src="js/main.min.js"></script>    
 </body>
 </html>
