@@ -6,6 +6,7 @@
     <title>Rusgas</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 <link rel="stylesheet" href="css/aos.css">
 <link rel="stylesheet" href="css/normalize.css">    
 <link rel="stylesheet" href="css/style.min.css">
@@ -151,7 +152,7 @@
                  </div> 
                </div>
              <div class="footer__col2">
-           <a href="#" class="footer__btn hvr-grow">Оставить заявку</a>
+                <a class="footer__btn hvr-grow" data-fancybox data-src="#modal" href="javascript:;">Оставить заявку</a>
            <div class="footer__social-inner">
              <img src="images/ig.svg" alt="instagram">
              <img src="images/fb.svg" alt="facebook"> 
@@ -160,11 +161,59 @@
              </div>
          </div>   
         </div>   
-       </footer>    
+       </footer>
+       
+       <div id="modal">
+        <div class="modal__inner">
+       <h2 class="modal__title">
+          Оставьте заявку на нужную услугу
+       </h2>
+       <p class="modal__desc">или позвоните нам и мы поможем вам определиться: <span>8 495 666-666</span> </p>   
+      
+      <h3 class="modal__title--service">Услуга</h3>
+      <div class="modal__btn-inner">
+      <button class="modal__btn hvr-rectangle-out">SEO</button>
+      <button class="modal__btn hvr-rectangle-out">Дизайн</button>
+      <button class="modal__btn hvr-rectangle-out">Веб-разработка</button>
+      <button class="modal__btn hvr-rectangle-out">Контекстная реклама</button>
+      <button class="modal__btn hvr-rectangle-out">Поддержка</button>
+      </div>
+      <h3 class="modal__price--title">Стоимость</h3>
+      
+      <div id="slider"></div>
+      <div class="modal__btn-price--inner">
+        <button class="modal__btn hvr-rectangle-out">менее 100 тыс.</button>
+        <button class="modal__btn hvr-rectangle-out">100–400 тыс.</button>
+        <button class="modal__btn hvr-rectangle-out">500 тыс.</button>
+        <button class="modal__btn hvr-rectangle-out">500–900 тыс.</button>
+        <button class="modal__btn hvr-rectangle-out">выше 1 млн.</button>
+        </div>
+      
+      <div class="modal__form">
+        <h3 class="modal__form--title">Контактные данные</h3>  
+      <form action="form__action">
+       <div class="contact__form">
+          <div class="contact__form--row-1">
+          <input class="input__form"  type="text" placeholder="Ваше имя">
+          <label class="name__label">Укажите ваше имя</label>
+          </div>
+          <div class="contact__form--row-2">
+          <input class="input__form" type="text" placeholder="Телефон">    
+          <label class="name__label">Укажите контактный телефон</label>
+      </div>       
+       </div>
+       <button class="form__btn hvr-grow" type="submit">Отправить заявку</button>
+      
+      </form>
+      </div>
+      </div>
+      </div>  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
        <script src="js/aos.js"></script>
        <script>
         AOS.init();
       </script>
+      <script src="js/jquery.fancybox.min.js"></script>
        <script src="js/main.min.js"></script>    
        </body>
        </html>
